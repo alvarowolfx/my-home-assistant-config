@@ -1,0 +1,34 @@
+  quarto:
+    name: Quarto
+    view: yes
+    entities:
+      - switch.rf_switch3
+  escritorio:
+    name: Escritorio
+    view: yes
+    entities:
+      - switch.rf_switch1
+      - switch.luminaria_de_mesa
+      - binary_sensor.cadeira_escritorio
+      - binary_sensor.sensor_porta
+      - binary_sensor.sensor_presenca
+      - camera.usb_camera
+  cozinha:
+    name: Cozinha
+    view: yes
+    entities:
+      - switch.rf_switch2
+      - sensor.temperatura_horta
+      - sensor.umidade_horta
+  tomadas:
+    name: Tomadas
+    view: yes
+    entities:
+      - switch.rf_switch1
+      - switch.rf_switch2
+      - switch.rf_switch3
+  familia:
+     name: Familia
+     entities:
+       - device_tracker.alvaro
+       - device_tracker.thais

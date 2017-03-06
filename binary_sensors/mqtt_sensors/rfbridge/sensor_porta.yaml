@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: 'rfbridge/value/166860533'
+name: 'Sensor porta'
+sensor_class: opening

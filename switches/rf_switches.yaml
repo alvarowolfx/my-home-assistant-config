@@ -1,0 +1,14 @@
+platform: command_line
+switches:
+  rf_switch1:
+    friendly_name: "Ventilador Arno"
+    command_on: '/home/pi/433Utils/RPi_utils/codesend 333107 0 189'
+    command_off: '/home/pi/433Utils/RPi_utils/codesend 333116 0 189'
+  rf_switch2:
+    friendly_name: "Tomada 2"
+    command_on: '/home/pi/433Utils/RPi_utils/codesend 333251 0 189'
+    command_off: '/home/pi/433Utils/RPi_utils/codesend 333260 0 189'
+  rf_switch3:
+    friendly_name: "Ventilador Sala"
+    command_on: '/home/pi/433Utils/RPi_utils/codesend 333571 0 189'
+    command_off: '/home/pi/433Utils/RPi_utils/codesend 333580 0 189'

@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: 'home/horta/umidade'
+name: 'Umidade Horta'
+unit_of_measurement: '%'
+value_template: '{{ value_json.umidade }}'

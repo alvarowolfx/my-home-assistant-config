@@ -1,0 +1,58 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home Viebrantz
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation  
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Cuiaba  
+  customize: !include customize.yaml
+   
+# Show config menu
+config:
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Track the sun
+sun:
+
+# Enables the frontend
+frontend:
+
+# Enable http
+http:
+
+# Enable Hue Bridge
+emulated_hue:
+  host_ip: !secret home_central_ip
+
+mqtt:
+  broker: !secret mqtt_broker_host
+  port: !secret mqtt_broker_port
+  client_id: home-assistant-100
+  keepalive: 120
+
+sensor: !include_dir_list sensors/
+binary_sensor: !include_dir_list binary_sensors/
+#mysensors: !include mysensors.yaml
+switch: !include_dir_list switches/
+#camera: !include_dir_list cameras/
+group: !include groups.yaml
+device_tracker: !include_dir_list device_trackers/
+automation: !include_dir_list automations/
+#script: !include_dir_merged_named scripts/
+
+logger:
+  default: info
+
+# Enables support for tracking state changes over time.
+#history:
+
+# View all events in a logbook
+#logbook:

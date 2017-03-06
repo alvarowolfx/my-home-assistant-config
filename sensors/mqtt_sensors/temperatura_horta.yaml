@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: 'home/horta/temperatura'
+name: 'Temperatura Horta'
+unit_of_measurement: '°C'
+value_template: '{{ value_json.temperatura }}'

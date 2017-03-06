@@ -1,0 +1,4 @@
+platform: mqtt
+command_topic: "living/fan1/switch"
+state_topic: "living/fan1/status"
+name: "Luminaria de Mesa"

@@ -1,0 +1,10 @@
+  gateways:
+    - device: mqtt
+      topic_in_prefix: 'mysensors-out'
+      topic_out_prefix: 'mysensors-in'
+      persistence_file: "/home/pi/sensors.json"
+  debug: true
+  persistence: true
+  optimistic: false
+  retain: true
+  version: 2.0
