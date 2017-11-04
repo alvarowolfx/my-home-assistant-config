@@ -1,0 +1,12 @@
+platform: mqtt
+name: "Bedroom bed light"
+state_topic: "bedroom/rgb1/light/status"
+command_topic: "bedroom/rgb1/light/switch"
+brightness_state_topic: 'bedroom/rgb1/light/brightness'
+brightness_command_topic: 'bedroom/rgb1/light/brightness/set'
+rgb_state_topic: 'bedroom/rgb1/rgb/status'
+rgb_command_topic: 'bedroom/rgb1/rgb/set'
+payload_on: "ON"
+payload_off: "OFF"
+brightness_scale: 100
+optimistic: false

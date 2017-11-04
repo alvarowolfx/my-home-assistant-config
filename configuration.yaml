@@ -19,8 +19,11 @@ updater:
 # Discover some devices automatically
 discovery:
 
+# Enable ios app
+# ios: 
+
 # Track the sun
-sun:
+# sun:
 
 # Enables the frontend
 frontend:
@@ -42,9 +45,10 @@ sensor: !include_dir_list sensors/
 binary_sensor: !include_dir_list binary_sensors/
 #mysensors: !include mysensors.yaml
 switch: !include_dir_list switches/
+light: !include_dir_list lights/
 #camera: !include_dir_list cameras/
 group: !include groups.yaml
-device_tracker: !include_dir_list device_trackers/
+#device_tracker: !include_dir_list device_trackers/
 automation: !include_dir_list automations/
 #script: !include_dir_merged_named scripts/
 

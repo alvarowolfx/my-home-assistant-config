@@ -3,11 +3,19 @@
     view: yes
     entities:
       - switch.rf_switch3
+      - light.bedroom_rgb
+  sala:
+    name: Sala
+    view: yes
+    entities:
+      - switch.rf_switch1
+      - switch.rfsala_entrada
+      - switch.rf_sala_sofa
   escritorio:
     name: Escritorio
     view: yes
     entities:
-      - switch.rf_switch1
+      - switch.rf_switch2
       - switch.luminaria_de_mesa
       - binary_sensor.cadeira_escritorio
       - binary_sensor.sensor_porta
@@ -16,8 +24,7 @@
   cozinha:
     name: Cozinha
     view: yes
-    entities:
-      - switch.rf_switch2
+    entities:      
       - sensor.temperatura_horta
       - sensor.umidade_horta
   tomadas:

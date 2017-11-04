@@ -1,10 +1,12 @@
     switch.luminaria_de_mesa:
-      emulated_hue_name: "Desk Light"
+      emulated_hue_name: "Desk Light"    
     switch.rf_switch1:
       emulated_hue_name: "Outlet One"
     switch.rf_switch2:
       emulated_hue_name: "Outlet Two"
     switch.rf_switch3:
       emulated_hue_name: "Outlet Three"
+    light.bedroom_rgb:
+      emulated_hue_name: "Bedroom Light"
     sensor.umidade_horta:
       homebridge_sensor_type: humidity
