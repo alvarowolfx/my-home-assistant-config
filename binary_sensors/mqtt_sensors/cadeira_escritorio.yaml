@@ -1,4 +1,4 @@
 platform: mqtt
 state_topic: '91C7B1/binary_sensor/door/state'
 name: 'Cadeira Escritorio'
-sensor_class: occupancy
+device_class: occupancy

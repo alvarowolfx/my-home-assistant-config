@@ -1,4 +1,4 @@
 platform: mqtt
 state_topic: '/devices/esp8266_15F3BB/events/presence'
 name: 'External Pumpkin'
-sensor_class: occupancy
+device_class: motion
