@@ -9,6 +9,12 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Cuiaba  
   customize: !include customize.yaml
+
+# Activate cloud
+cloud:
+
+# Homekit config
+homekit:
    
 # Show config menu
 config:
@@ -41,6 +47,7 @@ mqtt:
   port: !secret mqtt_broker_port
   client_id: home-assistant-100
   keepalive: 120
+  discovery: True
 
 sensor: !include_dir_list sensors/
 binary_sensor: !include_dir_list binary_sensors/
