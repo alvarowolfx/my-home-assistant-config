@@ -1,14 +1,16 @@
-    switch.luminaria_de_mesa:
-      emulated_hue_name: "Desk Light"    
-    switch.rf_switch1:
-      emulated_hue_name: "Fan One"
-    switch.rf_switch2:
-      emulated_hue_name: "Fan Two"
-    switch.rf_switch3:
-      emulated_hue_name: "Christmas Tree"
-    light.bedroom_rgb:
-      emulated_hue_name: "Bedroom Light"
-    sensor.umidade_horta:
-      homebridge_sensor_type: humidity
-    binary_sensor.pumpkin:      
-      homebridge_hidden: true
+switch.luminaria_de_mesa:
+  emulated_hue_name: Old Light
+switch.rf_switch1:
+  emulated_hue_name: Fan One
+switch.rf_switch2:
+  emulated_hue_name: Desk Light
+switch.rf_switch3:
+  emulated_hue_name: Fan Two
+light.bedroom_rgb:
+  emulated_hue_name: Bedroom Light
+sensor.umidade_horta:
+  homebridge_sensor_type: humidity
+binary_sensor.pumpkin:
+  homebridge_hidden: true
+binary_sensor.cadeira_escritorio:
+  homebridge_hidden: true

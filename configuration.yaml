@@ -38,15 +38,15 @@ frontend:
 http:
 
 # Enable Hue Bridge
-emulated_hue:
-  host_ip: !secret home_central_ip
-  listen_port: 80
+#emulated_hue:
+#  host_ip: !secret home_central_ip
+#  listen_port: 80
 
 mqtt:
-  broker: !secret mqtt_broker_host
-  port: !secret mqtt_broker_port
-  client_id: home-assistant-100
-  keepalive: 120
+  #broker: !secret mqtt_broker_host
+  #port: !secret mqtt_broker_port
+  #client_id: home-assistant-100
+  #keepalive: 120
   discovery: True
 
 sensor: !include_dir_list sensors/

@@ -1,4 +1,0 @@
-platform: mqtt
-state_topic: 'rfbridge/value/184462069'
-name: 'Sensor presenca'
-sensor_class: motion
