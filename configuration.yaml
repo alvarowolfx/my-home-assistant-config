@@ -36,6 +36,7 @@ frontend:
 
 # Enable http
 http:
+#  api_password: !secret api_password
 
 # Enable Hue Bridge
 #emulated_hue:
@@ -48,6 +49,21 @@ mqtt:
   #client_id: home-assistant-100
   #keepalive: 120
   discovery: True
+  embedded:
+    listeners:
+      default:
+        max-connections: 5000
+        type: tcp
+      my-tcp-1:
+        bind: 0.0.0.0:1883
+      ws-1:
+        bind: 0.0.0.0:9090
+        type: ws
+    auth:
+      plugins: ['auth.anonymous']
+      allow-anonymous: true
+  broker: 127.0.0.1
+  port: 1883
 
 sensor: !include_dir_list sensors/
 binary_sensor: !include_dir_list binary_sensors/

@@ -1,23 +1,23 @@
   quarto:
-    name: 'Bedroom'
+    name: 'Quarto'
     view: yes
     entities:
       - switch.rf_switch3
       - light.bedroom_rgb  
   sala:
-    name: 'Living Room'
+    name: 'Sala'
     view: yes 
     entities:      
       - switch.rf_sala_entrada
       - switch.rf_sala_sofa
   living_lights:
-    name: 'Living Room Lights'
+    name: 'Luzes da Sala'
     view: no 
     entities:      
       - switch.rf_sala_entrada
       - switch.rf_sala_sofa
   escritorio:
-    name: Office
+    name: Escritorio
     view: yes
     entities:
       - switch.rf_switch1
@@ -28,19 +28,19 @@
       - binary_sensor.sensor_presenca
       - camera.usb_camera
   office_lights:
-    name: 'Office Lights'
+    name: 'Luzes do Escritorio'
     view: no
     entities:
       - switch.rf_switch1
       - switch.rf_switch2
   cozinha:
-    name: Kitchen
+    name: Cozinha
     view: yes
     entities:      
       - sensor.temperatura_horta
       - sensor.umidade_horta
   familia:
-     name: Family
+     name: Familia
      entities:
        - device_tracker.alvaro
        - device_tracker.thais

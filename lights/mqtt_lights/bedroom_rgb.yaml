@@ -1,5 +1,5 @@
 platform: mqtt
-name: "Bedroom bed light"
+name: "Luz da cama"
 state_topic: "bedroom/rgb1/light/status"
 command_topic: "bedroom/rgb1/light/switch"
 brightness_state_topic: 'bedroom/rgb1/light/brightness'

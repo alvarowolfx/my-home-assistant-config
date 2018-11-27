@@ -1,13 +1,13 @@
 switch.luminaria_de_mesa:
-  emulated_hue_name: Old Light
+  emulated_hue_name: Luminaria mesa
 switch.rf_switch1:
-  emulated_hue_name: Fan One
+  emulated_hue_name: Ventilador escritorio
 switch.rf_switch2:
-  emulated_hue_name: Desk Light
+  emulated_hue_name: Ventilador sala
 switch.rf_switch3:
-  emulated_hue_name: Fan Two
+  emulated_hue_name: Ventilador quarto
 light.bedroom_rgb:
-  emulated_hue_name: Bedroom Light
+  emulated_hue_name: Luz da cama
 sensor.umidade_horta:
   homebridge_sensor_type: humidity
 binary_sensor.pumpkin:
